@@ -1,0 +1,41 @@
+{
+  "recipes": [
+    {
+      "id": "2",
+      "title": "Pad Thai",
+      "description": "A famous Thai noodle dish with stir-fried rice noodles, eggs, tofu, shrimp, and flavored with tamarind pulp, fish sauce, garlic, red chili pepper, and palm sugar, garnished with roasted peanuts.",
+      "image": "https://foodwithfeeling.com/wp-content/uploads/2021/02/Vegan-Pad-Thai-7-300x300.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Fish Tacos",
+      "description": "Lightly battered fish served on a soft tortilla with shredded cabbage, a zesty white sauce, and a squeeze of fresh lime.",
+      "image": "https://therealkitchen.com/wp-content/uploads/2023/02/bangbangfishtaco-300x300.jpeg"
+    },
+    {
+      "id": "4",
+      "title": "Lahmacun",
+      "description": "Lahmacun, açılmış hamurun üzerine kıyma, maydanoz, soğan, sarımsak, karabiber ve isot gibi baharatlarla hazırlanan malzeme sürüldükten sonra taş fırında pişirilmesiyle yapılan Orta Doğu mutfağında bir çeşit içli pidedir.",
+      "image": "https://media.istockphoto.com/id/1253910105/tr/foto%C4%9Fraf/lezzetli-t%C3%BCrk-pizza-lahmacun-bu-lahmacun-lezzetli-ve-lezzetli.jpg?s=612x612&w=0&k=20&c=axOLOVXEFNKSAgJGKq46GlUKyUEeyLVADZTbaX1Pa5k="
+    },
+    {
+      "id": "6",
+      "title": "Pad Thai",
+      "description": "A famous Thai noodle dish with stir-fried rice noodles, eggs, tofu, shrimp, and flavored with tamarind pulp, fish sauce, garlic, red chili pepper, and palm sugar, garnished with roasted peanuts.",
+      "image": "https://foodwithfeeling.com/wp-content/uploads/2021/02/Vegan-Pad-Thai-7-300x300.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Fish Tacos",
+      "description": "Lightly battered fish served on a soft tortilla with shredded cabbage, a zesty white sauce, and a squeeze of fresh lime.",
+      "image": "https://therealkitchen.com/wp-content/uploads/2023/02/bangbangfishtaco-300x300.jpeg"
+    },
+    {
+      "id": "8",
+      "title": "Lahmacun",
+      "description": "Lahmacun, açılmış hamurun üzerine kıyma, maydanoz, soğan, sarımsak, karabiber ve isot gibi baharatlarla hazırlanan malzeme sürüldükten sonra taş fırında pişirilmesiyle yapılan Orta Doğu mutfağında bir çeşit içli pidedir.",
+      "image": "https://media.istockphoto.com/id/1253910105/tr/foto%C4%9Fraf/lezzetli-t%C3%BCrk-pizza-lahmacun-bu-lahmacun-lezzetli-ve-lezzetli.jpg?s=612x612&w=0&k=20&c=axOLOVXEFNKSAgJGKq46GlUKyUEeyLVADZTbaX1Pa5k="
+    }
+  ],
+  "cards": []
+}
