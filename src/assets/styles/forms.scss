@@ -68,4 +68,25 @@
   input[type="submit"]:disabled:hover {
     transform: none;
   }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  button {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s;
+
+    &:hover {
+      background-color: #c0392b;
+      transform: scale(1.05);
+    }
+  }
 }

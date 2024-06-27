@@ -30,6 +30,9 @@ const Navi = () => {
               <NavLink to="/settings">Settings</NavLink>
             </li>
             <li>
+              <NavLink to="/favorites">Favorite Recipes</NavLink>
+            </li>
+            <li>
               <button onClick={logout}>Logout</button>
             </li>
           </>

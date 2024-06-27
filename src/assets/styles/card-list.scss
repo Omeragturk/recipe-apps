@@ -6,10 +6,5 @@
 }
 
 .card-list .card {
-  transition: transform 0.3s, box-shadow 0.3s;
-  max-width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  margin: auto;
-  z-index: 1;
+  height: 100%;
 }

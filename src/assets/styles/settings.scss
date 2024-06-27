@@ -1,0 +1,101 @@
+$light-background: #f0f0f0;
+$light-text: #333;
+$dark-background: #1c1c1c;
+$dark-text: #f0f0f0;
+$primary-color: #c2d4d3;
+$secondary-color: #77c5bd;
+
+body.light {
+  background-color: $light-background;
+  color: $light-text;
+  transition: background-color 0.3s ease;
+}
+
+body.dark {
+  background-color: $dark-background;
+  color: $dark-text;
+  transition: background-color 0.3s ease;
+}
+
+.settings-page {
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 50px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  &.light {
+    background-color: $light-background;
+    color: $light-text;
+
+    .options {
+      select,
+      button {
+        background-color: $primary-color;
+        color: $light-text;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
+
+  &.dark {
+    background-color: $dark-background;
+    color: $dark-text;
+
+    .options {
+      select,
+      button {
+        background-color: $secondary-color;
+        color: $dark-text;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: lighten($secondary-color, 10%);
+        }
+      }
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .language-options,
+    .theme-options {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+      }
+
+      select {
+        font-size: 1rem;
+        padding: 5px;
+      }
+    }
+  }
+}

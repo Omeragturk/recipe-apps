@@ -6,7 +6,7 @@ export const UserPreferencesProvider = ({ children }) => {
   const [language, setLanguage] = useState("English");
   const [theme, setTheme] = useState("light");
 
-  const changeLanguage = (newLanguage) => setLanguage(newLanguage);
+  const changeLanguage = (lang) => setLanguage(lang);
   const toggleTheme = () =>
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
 
