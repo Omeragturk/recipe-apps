@@ -43,51 +43,37 @@
     }
   }
 
-  .favorite-icon {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    padding: 5px;
-    background: #fff;
-    border: none;
-    cursor: pointer;
-    z-index: 2;
-    font-size: 1.5rem;
-    color: #f39c12; /* Favori yıldız rengi */
-    transition: color 0.3s;
-
-    &:hover {
-      color: #e67e22; /* Hover durumunda yıldız rengi */
-    }
-  }
-
+  .favorite-icon,
   .delete,
   .edit {
     position: absolute;
-    top: 5px;
-    right: 5px;
-    padding: 5px;
-    background: none;
-    border: none;
+    top: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: color 0.3s;
-    z-index: 2;
+    transition: background 0.3s, transform 0.3s;
+
+    &:hover {
+      background: #f1c40f;
+      transform: scale(1.1);
+    }
+  }
+
+  .favorite-icon {
+    left: 10px;
+    font-size: 1.5rem;
+    color: #f39c12;
   }
 
   .delete {
+    right: 10px;
     color: #e74c3c;
-
-    &:hover {
-      color: #c0392b;
-    }
   }
 
   .edit {
-    right: 35px;
+    right: 50px;
     color: #3498db;
-
-    &:hover {
-      color: #2980b9;
-    }
   }
 }

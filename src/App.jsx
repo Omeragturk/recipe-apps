@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import Navi from "./components/Navi";
 import CardList from "./components/CardList";
 import Forms from "./components/Forms";
@@ -16,6 +17,16 @@ import {
 import { FavoriteRecipeProvider } from "./context/FavoriteRecipeContext";
 import PrivateRoute from "./services/PrivateRoute";
 import ChatBox from "./components/ChatBox";
+
+const ThemeProvider = ({ children }) => {
+  const { theme } = useContext(UserPreferencesContext);
+
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
+  return <>{children}</>;
+};
 
 const App = () => {
   return (
@@ -51,16 +62,6 @@ const App = () => {
       </RecipeProvider>
     </AuthContextProvider>
   );
-};
-
-const ThemeProvider = ({ children }) => {
-  const { theme } = useContext(UserPreferencesContext);
-
-  useEffect(() => {
-    document.body.className = theme;
-  }, [theme]);
-
-  return <>{children}</>;
 };
 
 export default App;

@@ -1,28 +1,36 @@
-import React, { createContext, useState, useContext } from "react";
-import { AuthContext } from "./AuthContext";
+import React, { createContext, useContext, useState, useEffect } from "react";
 
-export const FavoriteRecipeContext = createContext(); // createContext ile context oluştur
+const FavoriteRecipeContext = createContext();
+
+export const useFavoriteRecipes = () => {
+  return useContext(FavoriteRecipeContext);
+};
 
 export const FavoriteRecipeProvider = ({ children }) => {
-  const { user } = useContext(AuthContext); // AuthContext'ten user bilgisini al
-  const [favoriteRecipes, setFavoriteRecipes] = useState([]);
+  const [favoriteRecipes, setFavoriteRecipes] = useState(() => {
+    const savedFavorites = localStorage.getItem("favoriteRecipes");
+    return savedFavorites ? JSON.parse(savedFavorites) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("favoriteRecipes", JSON.stringify(favoriteRecipes));
+  }, [favoriteRecipes]);
 
   const addFavoriteRecipe = (recipe) => {
-    if (user) {
-      // Kullanıcı oturum açmışsa
-      setFavoriteRecipes((prevFavorites) => [...prevFavorites, recipe]);
-    } else {
-      alert("Please login to add favorite recipes."); // Kullanıcıya giriş yapması gerektiği bilgisini ver
-    }
+    setFavoriteRecipes((prevFavorites) => [...prevFavorites, recipe]);
+  };
+
+  const removeFavoriteRecipe = (id) => {
+    setFavoriteRecipes((prevFavorites) =>
+      prevFavorites.filter((recipe) => recipe.id !== id)
+    );
   };
 
   return (
     <FavoriteRecipeContext.Provider
-      value={{ favoriteRecipes, addFavoriteRecipe }}
+      value={{ favoriteRecipes, addFavoriteRecipe, removeFavoriteRecipe }}
     >
       {children}
     </FavoriteRecipeContext.Provider>
   );
 };
-
-export const useFavoriteRecipes = () => useContext(FavoriteRecipeContext); // useFavoriteRecipes hook'u ile context'i kullan

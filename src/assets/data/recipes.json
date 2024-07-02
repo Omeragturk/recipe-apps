@@ -1,40 +1,106 @@
 {
   "recipes": [
     {
+      "id": "1",
+      "title": "Fish Tacos",
+      "description": "Lightly battered fish served on a soft tortilla with shredded cabbage, a zesty white sauce, and a squeeze of fresh lime.",
+      "image": "https://therealkitchen.com/wp-content/uploads/2023/02/bangbangfishtaco-300x300.jpeg"
+    },
+    {
       "id": "2",
-      "title": "Pad Thai",
-      "description": "A famous Thai noodle dish with stir-fried rice noodles, eggs, tofu, shrimp, and flavored with tamarind pulp, fish sauce, garlic, red chili pepper, and palm sugar, garnished with roasted peanuts.",
-      "image": "https://foodwithfeeling.com/wp-content/uploads/2021/02/Vegan-Pad-Thai-7-300x300.jpg"
+      "title": "Pizza",
+      "description": "Pizza, dünya genelinde belki de en popüler olan yemektir. Bu lezzetli İtalyan hamur işinin, Türkiye'de de büyük bir takipçi kitlesi bulunmaktadır. ",
+      "image": "https://d17wu0fn6x6rgz.cloudfront.net/img/w/tarif/mgt/pizza_14_11zon.webp"
     },
     {
       "id": "3",
-      "title": "Fish Tacos",
-      "description": "Lightly battered fish served on a soft tortilla with shredded cabbage, a zesty white sauce, and a squeeze of fresh lime.",
-      "image": "https://therealkitchen.com/wp-content/uploads/2023/02/bangbangfishtaco-300x300.jpeg"
+      "title": "Hamburger",
+      "description": "Hamburger, Amerika Birleşik Devletleri'nin en popüler fast food yemeklerinden biridir. ",
+      "image": "https://www.macfit.com/wp-content/uploads/2024/04/hamburger-kac-kalori.jpg"
     },
     {
       "id": "4",
-      "title": "Lahmacun",
-      "description": "Lahmacun, açılmış hamurun üzerine kıyma, maydanoz, soğan, sarımsak, karabiber ve isot gibi baharatlarla hazırlanan malzeme sürüldükten sonra taş fırında pişirilmesiyle yapılan Orta Doğu mutfağında bir çeşit içli pidedir.",
-      "image": "https://media.istockphoto.com/id/1253910105/tr/foto%C4%9Fraf/lezzetli-t%C3%BCrk-pizza-lahmacun-bu-lahmacun-lezzetli-ve-lezzetli.jpg?s=612x612&w=0&k=20&c=axOLOVXEFNKSAgJGKq46GlUKyUEeyLVADZTbaX1Pa5k="
+      "title": "Kebab",
+      "description": "Kebap, Türk mutfağının en popüler yemeklerinden biridir. ",
+      "image": "https://imgrosetta.mynet.com.tr/file/18313592/18313592-728xauto.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Pasta",
+      "description": "Pasta, İtalyan mutfağının en popüler yemeklerinden biridir. ",
+      "image": "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/0A475B34-4E78-40D8-9F30-46223B7D77E7/Derivates/E55C7EA4-0E60-403F-B5DC-75EA358197BD.jpg"
     },
     {
       "id": "6",
-      "title": "Pad Thai",
-      "description": "A famous Thai noodle dish with stir-fried rice noodles, eggs, tofu, shrimp, and flavored with tamarind pulp, fish sauce, garlic, red chili pepper, and palm sugar, garnished with roasted peanuts.",
-      "image": "https://foodwithfeeling.com/wp-content/uploads/2021/02/Vegan-Pad-Thai-7-300x300.jpg"
+      "title": "Sushi",
+      "description": "Sushi, Japon mutfağının en popüler yemeklerinden biridir. ",
+      "image": "https://images.deliveryhero.io/image/fd-tr/LH/o5ue-listing.jpg"
     },
     {
       "id": "7",
-      "title": "Fish Tacos",
-      "description": "Lightly battered fish served on a soft tortilla with shredded cabbage, a zesty white sauce, and a squeeze of fresh lime.",
-      "image": "https://therealkitchen.com/wp-content/uploads/2023/02/bangbangfishtaco-300x300.jpeg"
+      "title": "Taco",
+      "description": "Taco, Meksika mutfağının en popüler yemeklerinden biridir. ",
+      "image": "https://d17wu0fn6x6rgz.cloudfront.net/img/w/tarif/mgt/viral_kebap_taco.webp"
     },
     {
       "id": "8",
-      "title": "Lahmacun",
-      "description": "Lahmacun, açılmış hamurun üzerine kıyma, maydanoz, soğan, sarımsak, karabiber ve isot gibi baharatlarla hazırlanan malzeme sürüldükten sonra taş fırında pişirilmesiyle yapılan Orta Doğu mutfağında bir çeşit içli pidedir.",
-      "image": "https://media.istockphoto.com/id/1253910105/tr/foto%C4%9Fraf/lezzetli-t%C3%BCrk-pizza-lahmacun-bu-lahmacun-lezzetli-ve-lezzetli.jpg?s=612x612&w=0&k=20&c=axOLOVXEFNKSAgJGKq46GlUKyUEeyLVADZTbaX1Pa5k="
+      "title": "Köfte",
+      "description": "Köfte, Türk mutfağının en popüler yemeklerinden biridir. ",
+      "image": "https://cdn.yemek.com/mnresize/1250/833/uploads/2016/12/akcaabat-koftesi-one-cikan.jpg"
+    },
+    {
+      "id": "9",
+      "title": "Çorba",
+      "description": "Çorba, Türk mutfağının en popüler yemeklerinden biridir. ",
+      "image": "https://www.medicalpark.com.tr/_uploads/_images/_healthGuide/etNHr9en.jpg"
+    },
+    {
+      "id": "10",
+      "title": "Balık",
+      "description": "Balık, Türk mutfağının en popüler yemeklerinden biridir. ",
+      "image": "https://cdn.yemek.com/uploads/2016/07/firinda-somon.jpg"
+    },
+    {
+      "id": "11",
+      "title": "Kahvaltı",
+      "description": "Kahvaltı, Türk mutfağının en popüler yemeklerinden biridir. ",
+      "image": "https://omurrestaurant.com/wp-content/uploads/2021/10/e36eb9d4-a01d-49d9-804a-d643bda5ae8a.jpg"
+    },
+    {
+      "id": "12",
+      "title": "Tatlı",
+      "description": "Tatlı, Türk mutfağının en popüler yemeklerinden biridir. ",
+      "image": "https://img-s1.onedio.com/id-58bff00b8f92ded60e345fc3/rev-0/w-600/h-368/f-jpg/s-da884238dffe19f7a23cc9f71a6e004af1bfee37.jpg"
+    },
+    {
+      "id": "13",
+      "title": "Kahve",
+      "description": "Kahve, Türk mutfağının en popüler yemeklerinden biridir. ",
+      "image": "https://www.makbul.com/Content/global/images/products/2/228/ORG-turk-kahvesi-kg446.jpg"
+    },
+    {
+      "id": "14",
+      "title": "Çay",
+      "description": "Çay, Türk mutfağının en popüler yemeklerinden biridir. ",
+      "image": "https://i.lezzet.com.tr/images-xxlarge-secondary/cayin-tarihcesi-ve-turkiyeye-gelisi-c812539d-a158-4205-b031-724dd2fe3530"
+    },
+    {
+      "id": "15",
+      "title": "Salata",
+      "description": "Salata, Türk mutfağının en popüler yemeklerinden biridir. ",
+      "image": "https://d17wu0fn6x6rgz.cloudfront.net/img/w/tarif/mgt/beyaz-peynirli-akdeniz-salatasi-4.webp"
+    },
+    {
+      "id": "16",
+      "title": "Makarna",
+      "description": "Makarna, Türk mutfağının en popüler yemeklerinden biridir. ",
+      "image": "https://cdn.yemek.com/mnresize/940/940/uploads/2023/12/kremali-makarna-yemekcom.jpg"
+    },
+    {
+      "id": "17",
+      "title": "Kumpir",
+      "description": "Kumpir, Türk mutfağının en popüler yemeklerinden biridir. ",
+      "image": "https://cdn.yemek.com/mnresize/1250/833/uploads/2021/03/kumpir-yemekcom.jpg"
     }
   ],
   "cards": []

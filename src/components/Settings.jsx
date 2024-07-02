@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { UserPreferencesContext } from "../context/UserPreferencesContext";
-import "../assets/styles/settings.scss"; // Import the settings.scss file
+import "../assets/styles/settings.scss";
 
 const Settings = () => {
   const { language, changeLanguage, theme, toggleTheme } = useContext(
