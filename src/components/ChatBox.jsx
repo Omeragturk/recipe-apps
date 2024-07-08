@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import "../assets/styles/chatBox.scss";
 import { RecipeContext } from "../context/RecipeContext";
+import axios from "axios"; // Axios for API requests
 
 const ChatBox = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,10 +21,32 @@ const ChatBox = () => {
     setResult(null);
   };
 
-  const handleSuggestionClick = () => {
-    const randomRecipe = recipes[Math.floor(Math.random() * recipes.length)];
-    setResult(randomRecipe);
-    setSearchMode(false);
+  const handleSuggestionClick = async () => {
+    try {
+      const response = await axios.get(
+        "https://api.openai.com/v1/engines/text-davinci-003/completions",
+        {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: "Bearer YOUR_OPENAI_API_KEY", // Replace with your OpenAI API key
+          },
+          params: {
+            prompt: "Give me a recipe suggestion for...",
+            max_tokens: 150,
+            temperature: 0.7,
+          },
+        }
+      );
+      setResult({
+        title: "Suggested Recipe",
+        description: response.data.choices[0].text.trim(),
+      });
+      setSearchMode(false);
+    } catch (error) {
+      console.error("Error fetching suggestion:", error);
+      setResult({ title: "Error", description: "Failed to fetch suggestion." });
+      setSearchMode(false);
+    }
   };
 
   const handleContactClick = () => {
