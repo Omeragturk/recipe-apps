@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2",
-    "axios": "^1.7.2",
+    "axios": "^1.7.4",
     "dom": "^0.0.3",
     "i18next": "^23.11.5",
     "json-server": "^1.0.0-beta.0",
