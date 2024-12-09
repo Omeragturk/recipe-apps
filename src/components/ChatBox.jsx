@@ -1,8 +1,7 @@
 import React, { useState, useContext } from "react";
 import "../assets/styles/chatBox.scss";
 import { RecipeContext } from "../context/RecipeContext";
-import axios from "axios"; // Axios for API requests
-
+import axios from "axios";
 const ChatBox = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [searchMode, setSearchMode] = useState(false);
@@ -28,7 +27,7 @@ const ChatBox = () => {
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: "Bearer YOUR_OPENAI_API_KEY", // Replace with your OpenAI API key
+            Authorization: "Bearer YOUR_OPENAI_API_KEY",
           },
           params: {
             prompt: "Give me a recipe suggestion for...",
